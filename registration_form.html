@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHINCHANZON</title>
+    <style>
+        body{
+            background-color:aliceblue;
+            border: 5px dotted black;
+            padding-left: 250px;
+            height: 800px;
+            /* border: border-box; */
+        }
+     .main{
+        
+        text-align: center;
+        background-color: aliceblue;
+        width: 75%;
+        margin: 30px;
+        padding: 10px;
+        color:black;
+        border: 1px solid black;
+        border-radius: 7px;
+     }
+       .Sub{
+        text-align: center;
+        position: relative;
+        padding: 5px;
+        border: 1px double black;
+        padding-bottom: 5px;
+        margin: 15px;
+        margin-right:250px;
+
+       }
+       #A1{
+        margin-right: 15px;
+        text-shadow: 1px;
+       }
+       .Warn{
+        text-align: right;
+        color: red;
+        margin-right: 15px;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>This is a Registration Form</h1>
+    <h5 class="Warn">*All Feilds are mandatory</h5>
+    <div class="main">
+    <form action="successfull.html" autocomplete="off">
+        <label for="">First Name:-</label>
+        <input type="text" placeholder="Enter Your First Name" required><br><br>
+        <label for="">Middle Name:-</label>
+        <input type="text" placeholder="Enter Your Middle Name"required><br><br>
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Enter Your Last Name"required><br><br>
+        <label for="">Contact No</label>
+        <input type="text" maxlength="10" placeholder="Enter Your Contact No" required><br><br>
+        <label for="">Gender</label>
+        <input name="Gender" list="Gen" placeholder="Enter Your Gender"required>
+        <datalist id="Gen">
+            <option value="Male"></option>
+            <option value="Female"></option>
+            <option value="Not Decided Yet"></option>
+
+        </datalist><br><br>
+        <!-- <label for="">Address</label> -->
+        <!-- input -->
+        <label for="">Email</label>
+        <input type="email" name="" id="" placeholder="Enter Email Address" required><br><br>
+        <label for="">Username</label>
+        <input type="text" placeholder="Create Username"><br><br>
+        <label for="">Password</label>
+        <input type="password" name="" id="" placeholder="Enter Password"><br><br>
+    </div>
+        
+        
+        <div class="Sub">
+        <input type="submit" value="Register" id="A1">
+        <input type="reset" value="Reset" id="B1">
+        <!-- <input type="tel" name="tel" id=""> -->
+    </div>
+        
+    </form>
+</body>
+</html>
